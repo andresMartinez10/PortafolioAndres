@@ -1,0 +1,379 @@
+/* tipografias */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+@import url('https://use.fontawesome.com/releases/v.6.4.2/css/all.css');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes color-transition {
+    0% {
+        color: #ff244d; /* Comienza con el primer color */
+    }
+    50% {
+        color: #ff244cbb; /* Transición al segundo color a la mitad de la animación */
+    }
+    100% {
+        color: #ff244d; /* Regresa al primer color al final de la animación */
+    }
+}
+
+.navbar{
+    background: #141414;
+    padding: 0;
+    z-index: 10;
+    width: 100%; 
+    transition: 5s;
+}
+
+.menu .nav-item{
+    transition: .4s;
+    border-radius: 10px;
+}
+
+.menu .nav-item:hover{
+    background: #ff244d;
+    border-radius: 10px;
+}
+
+.menu .nav-item .nav-link{
+    margin: 5px;
+    color: aliceblue;
+    transition: 5s;
+}
+
+.menu .nav-item .contact{
+    color: #ff3434;
+    transition: .5s;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu .nav-item:hover .contact:hover{
+    color: #000000;
+    border-radius: 10px;
+}
+
+#aboutMe{
+    background: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 5s;
+}
+
+#aboutMe .contFoto{
+    backdrop-filter: blur(0.2rem);
+    background: #52525225;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 5s;
+}
+
+.deco-foto {
+    width: 50%;
+    padding-bottom: 50%;
+    background: linear-gradient(#ff244d, #fca607a4, #fffb0b);
+    border-radius: 50%;
+    max-width: 100%;
+    position: relative;
+}
+
+#aboutMe .foto{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background: url("../img/yo.png");
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 52px 33px 3px rgba(0,0,0,0.44);
+    -webkit-box-shadow: 0px 52px 33px 3px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 52px 33px 3px rgba(0,0,0,0.44);
+    border-radius: 50%;
+}
+
+#aboutMe .texto{
+    max-width: 100%;
+    max-height: 50vh;
+    transition: 5s;
+}
+
+#aboutMe .hello{
+    background-image: linear-gradient(to right, #ff244d, #fffb0b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 35px;
+    max-width: 100%;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    animation: color-transition 4s linear infinite; 
+    display: flex;
+    align-items: start;
+}
+
+#aboutMe .nombre{
+    position: relative;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), transparent);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    max-width: 100%;
+    font-size: 65px;
+    color: transparent;
+    font-family: 'Righteous', cursive;
+}
+
+#aboutMe .descripcion{
+    color: rgb(255, 255, 255);
+    max-width: 100%;
+    position: relative;
+    font-size: 15px;
+}
+
+#aboutMe button {
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: 0;
+    background: linear-gradient(to right, #ff244d, #ff9735d8);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all .3s ease;
+    box-shadow: linear-gradient(to right, #ff244d, #ff9735d8) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+    transition: .2s;
+}
+   
+#aboutMe button:hover {
+    box-shadow: #ed1c1c6b 0px 7px 0px 0px;
+}
+   
+#aboutMe button:active {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+    text-decoration: none;
+    transition: .2s;
+}
+
+#habilidades{
+    width: 100%;
+    height: 40vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    transition: .2s;
+}
+
+#habilidades h2{
+    color: #505050;
+    font-size: 35px;
+    max-width: 100%;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    animation: color-transition 4s linear infinite; 
+}
+
+#habilidades .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#habilidades .col{
+    list-style: none;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+#habilidades .col{
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100px;
+    background: #333;
+    line-height: 100px;
+    text-align: center;
+    color: #666;
+    font-size: 3em;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#habilidades .row .col::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--color);
+    transform: scale(0.9);
+    z-index: -1;
+}
+
+#habilidades .row .col:hover::before{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px var(--color);
+}
+
+#habilidades .row .col:hover{
+    color: var(--color);
+    box-shadow: 0px 0px 8px var(--color);
+    text-shadow: 0 0 8px var(--color);
+}
+
+#perfil{
+    background: #161616;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+    margin-bottom: 10px;
+}
+
+#perfil .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#perfil h2{
+    background-image: linear-gradient(to right, #ff244d, #fffb0b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 35px;
+    max-width: 100%;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    animation: color-transition 4s linear infinite; 
+    text-align: center;
+}
+
+#perfil .profesional img{
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#perfil p, hr{
+    font-size: 15px;
+    font-family: 'Righteous', cursive;
+    color: aliceblue;
+}
+
+#perfil .card {
+    height: 100%;
+    width: 100%;
+    background: #f7f7f713;
+    padding: 20px;
+    border: 4px double transparent;
+    border-image: linear-gradient( rgb(255, 57, 83), #fffb0b) 1;
+    transition: .5s;
+}
+
+#perfil .card:hover {
+    border-image: linear-gradient(#fffb0b, #ff3953) 1;
+    box-shadow: -2px 52px 71px -34px rgba(255,57,83,.32);
+    -webkit-box-shadow: -2px 52px 71px -34px rgba(255,57,83,.32);
+    -moz-box-shadow: -2px 52px 71px -34px rgba(255,57,83,.32);
+}
+
+#proyectos{
+    background: #000000;
+    width: 100vw;
+    padding: 30px auto;
+}
+
+#proyectos h2{
+    background-image: linear-gradient(to right, #ff244d, #fffb0b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 35px;
+    max-width: 100%;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    animation: color-transition 4s linear infinite; 
+    text-align: center;
+    margin-top: 30PX;
+}
+
+#proyectos .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#proyectos .card{
+    
+    margin: 30px auto;
+    max-width: 70%;
+}
+
+#proyectos .card img{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#experiencia{
+    background: #ffffff;
+    padding: 30px;
+    width: 100vw;
+}
+
+#experiencia h2{
+    background-image: linear-gradient(to right, #ff244d, #fffb0b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 35px;
+    max-width: 100%;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    animation: color-transition 4s linear infinite; 
+    margin-top: 30PX;
+}
+
+#contacto{
+    position: fixed;
+    width: 70px;
+    height: 120px;
+    background: #ff244d;
+    border-radius: 0 10px 10px 0;
+    z-index: 300;
+    display: block;
+    justify-content: center;
+    padding: 20px;
+
+}
